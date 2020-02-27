@@ -30,7 +30,7 @@ def main():
     print('\n\n--------------------')
     print('MyMLP (Backpropagation) with mini-batch gradient descent')
     print('--------------------')
-    model = make_network(hidden_layer_sizes=(3,1,2))
+    model = make_network(hidden_layer_sizes=(2,1,2))
     # model = make_network(hidden_layer_sizes=(5,))
     model = sgd(model, iris_data.data, iris_data.target, minibatch_size)
 
